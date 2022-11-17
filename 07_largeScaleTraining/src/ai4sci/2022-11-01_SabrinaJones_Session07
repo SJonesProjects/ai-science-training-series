@@ -1,0 +1,47 @@
+Job ID: 
+Job started at: 2022-11-17-040647
+DIR:/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  Job started at: 2022-11-17-040647 on thetalogin5           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ModuleCmd_Load.c(244):ERROR:105: Unable to locate a modulefile for 'conda/2022-07-01'
+./main.sh: line 61: conda: command not found
+./main.sh: line 62: ${COBALT_NODEFILE}: ambiguous redirect
+./main.sh: line 65: *2: syntax error: operand expected (error token is "*2")
+Found venv at: /lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/venv/, using that
+./main.sh: line 81: /bin/activate: No such file or directory
+/usr/bin/python3: No module named pip
+/usr/bin/python3: No module named pip
+WIDTH: 
+DIR=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci
+MAIN=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py
+PARENT=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src
+ROOT=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining
+LOGDIR=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs
+LOGFILE=/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs/2022-11-17-040647-thetalogin5_ngpu_ncpu32.log
+IBV_FORK_SAFE=
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  STARTING A NEW RUN ON  GPUs 32  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┃  - DATE: 2022-11-17-040647
+┃  - NCPUS: 32
+┃  - NRANKS: 
+┃  - NGPUS PER RANK: 2
+┃  - NGPUS TOTAL: 
+┃  - MAIN: /lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py
+┃  - Writing logs to /lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/logs/2022-11-17-040647-thetalogin5_ngpu_ncpu32.log
+┃  - python3: /usr/bin/python3
+┃  - mpirun: 
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'ai4sci'
+┃  - ai4sci: 
+┃  - exec:   /usr/bin/python3 /lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py batch_size=512
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  File "/lus/swift/home/sjones65/ai-science-training-series/07_largeScaleTraining/src/ai4sci/main.py", line 65
+    log.info((sep := '-' * len(summary)))
+                  ^
+SyntaxError: invalid syntax
